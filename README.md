@@ -1,4 +1,4 @@
-Scrapper for downloading country wise data present in charts at https://www.worldometers.info/coronavirus/country/us/, such as 
+Scrapper for downloading country wise data present in charts at https://www.worldometers.info/coronavirus/country/us/, 
 
 ![](./imgs/total_cases.png)
 
@@ -10,16 +10,26 @@ Once that is done, make sure to update the ```config.py``` file. You will need t
 
 
 
-# Download data
+# Execute
 
 Once the configuration is done download the data by
 
 ```
 cd <repo path>
-python engine.py
+## Download data for all countries listed at worldo-meter
+python engine.py --country All --update Yes
+## Download data for some countries (See country.json for valid country names)
+python engine.py --country USA,Spain,Turkey --update Yes
 ```
 
+The data will automatically get downloaded in the ```data``` folder
 
+# Arguments
+
+You can use two command line arguments,
+
+1.  ```--country``` , it can either be ```All``` or ```USA, Spain,Italy``` for valid country names see ```country.json``` 
+2. ```--update``` , should ```country.json``` be updated from worldo-meter website. Values can be ```Yes``` or ```No```
 
 # Requirements
 
