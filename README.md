@@ -57,10 +57,11 @@ Cite this project
 ```
 @misc{Gunnvant2020,
   author = {Gunnvant, Saini},
-  title = {Worldometer_Chart_Scrapper},
+  title = {covid_scrapper},
   year = {2020},
   publisher = {GitHub},
   journal = {GitHub repository},
+  desc = {Scrapes data on the charts in worldometer}
 }
 ```
 
