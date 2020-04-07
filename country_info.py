@@ -2,11 +2,15 @@ from selenium import webdriver
 import os
 from bs4 import BeautifulSoup
 import numpy as np
+import platform
 def get_browser(web_driver_path):
-    curr_dir=os.getcwd()
-    os.chdir(web_driver_path)
-    browser=webdriver.Chrome()
-    os.chdir(curr_dir)
+    if platform.system()=='Windows':
+        curr_dir=os.getcwd()
+        os.chdir(web_driver_path)
+        browser=webdriver.Chrome()
+        os.chdir(curr_dir)
+    else:
+        browser = webdriver.Chrome(web_driver_path)
     return browser
 def get_soup(browser,base_url):
     browser.get(base_url)

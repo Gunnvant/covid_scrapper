@@ -53,7 +53,7 @@ def fetch_some(web_driver_path,names):
             d=[]
             for i in range(num_charts):
                 d.append(plot_utils.get_chart_data(browser,i))
-            plot_utils.writer(names,d,base_path)
+            plot_utils.writer(n,d,base_path)
     else:
         print("Name of countries not provided either as comma separated string or illegal values of country names, see country.json for more info on country names")
 if __name__=='__main__':
