@@ -1,3 +1,5 @@
+![](./imgs/GUI.gif)
+
 Scrapper for downloading country wise data present in charts at https://www.worldometers.info/coronavirus/country/us/, 
 
 ![](./imgs/total_cases.png)
