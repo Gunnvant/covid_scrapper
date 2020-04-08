@@ -10,7 +10,7 @@ Once that is done, make sure to update the ```config.py``` file. You will need t
 
 
 
-# Execute
+# Execute Command Line
 
 Once the configuration is done download the data by
 
@@ -28,8 +28,27 @@ The data will automatically get downloaded in the ```data``` folder
 
 You can use two command line arguments,
 
-1.  ```--country``` , it can either be ```All``` or ```USA, Spain,Italy``` for valid country names see ```country.json``` 
-2. ```--update``` , should ```country.json``` be updated from worldo-meter website. Values can be ```Yes``` or ```No```
+1. ```--country``` , it can either be ```All``` or ```USA, Spain,Italy``` for valid country names see ```country.json``` 
+2. ```--update``` , should ```country.json``` be updated from worldo-meter website. Values can be ```Yes``` or ```No``` 
+
+# Execute GUI
+
+``` 
+cd <repo path>
+python gui.py
+```
+
+Following gui box will pop up:
+
+![](./imgs/gui1.png)
+
+Fill in the path to chrome webdriver executables and press the appropriate button
+
+![](./imgs/gui2.png)
+
+
+
+The data will get downloaded in the data folder of this project.
 
 # Requirements
 
@@ -46,9 +65,7 @@ numpy==1.16.5
 
 # Download pre-fetched data
 
-I will try to upload data daily . Latest dump is here https://datasetsgun.s3.amazonaws.com/data/data_05_04_20+18_14_35.zip
-
-
+I will try to upload data daily . Latest dump is here https://datasetsgun.s3.amazonaws.com/data/data_08_04_20.zip
 
 # Citation
 
